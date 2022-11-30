@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+$text-font: 'Space Mono', monospace;
+$title-font: 'Inconsolata', monospace;
+
+
+body {
+    background-color: #f3f3f3;
+    padding: 40px 77px 24px 77px ;
+    margin: 0;
+
+}
+
+h1 {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    .scare-crow {
+        width: 50%;
+        img {
+            width: 80%;
+        }
+    }
+    .info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-family: $text-font;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 94.78px;
+            letter-spacing: -3.5%;
+        }
+        p {
+            width: 400px;
+            font-family: $text-font;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 35.54px;
+            letter-spacing: -3.5%;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 24px 43px;
+            border: none;
+            width: 216px;
+            text-transform: uppercase;
+            font-family: $text-font;
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 60px;
+        }
+    }
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $text-font;
+    font-size: 14px;
+    color: #BDBDBD;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 24px;
+    }
+    .row {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        .scare-crow {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .info {
+            width: 100%;
+            gap:30px
+            h2 {
+                font-size: 48px;
+                line-height: 61.09px;
+            }
+            p {
+                width: 100%;
+                font-size: 18px;
+                line-height: 26.66px;
+            }
+        }
+    }
+    .footer {
+        margin-top: 100px;
+    }
+}
+
+
